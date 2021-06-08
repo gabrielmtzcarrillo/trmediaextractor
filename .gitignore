@@ -352,3 +352,6 @@ MigrationBackup/
 #Media
 cdaudio.wad
 *.wav
+
+#Old Files
+*.old
