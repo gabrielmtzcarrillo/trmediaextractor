@@ -3,4 +3,4 @@
 	url = https://github.com/galoreware/io.git
 [submodule "galoreware.drawing"]
 	path = galoreware.drawing
-	url = https://github.com/galoreware/drawing/
+	url = https://github.com/galoreware/drawing.git
