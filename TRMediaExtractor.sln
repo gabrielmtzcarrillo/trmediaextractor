@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GaloreWare.IO", "..\io\GaloreWare.IO.csproj", "{A9D1A00B-E730-4519-974E-A32C3F462972}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GaloreWare.IO", "galoreware.io\GaloreWare.IO.csproj", "{A9D1A00B-E730-4519-974E-A32C3F462972}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CDAudioEx", "CDAudioEx\CDAudioEx.csproj", "{C7E2BB5E-70F9-4874-8E19-DF0CD2EDF75D}"
 EndProject
