@@ -13,7 +13,7 @@ jobs:
 
     steps:
     - checkout: self
-      submodules: true
+      submodules: recursive
     - uses: actions/checkout@v2
     - name: Setup .NET
       uses: actions/setup-dotnet@v1
