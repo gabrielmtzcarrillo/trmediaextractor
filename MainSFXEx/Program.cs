@@ -13,7 +13,7 @@ namespace MainSFXEx
         {
             Console.Title = "Main.sfx Extractor";
 
-            ByteAccess sfx = new ByteAccess("main.sfx");
+            Binary sfx = new Binary("main.sfx");
 
             int offset = 0;
             int index = 1;
@@ -26,12 +26,12 @@ namespace MainSFXEx
 
         }//MAIN
 
-        public static int ExtractSFX(ByteAccess file, int offset, string filename)
+        public static int ExtractSFX(Binary file, int offset, string filename)
         {
             if (offset >= file.Length)
                 return -1;
 
-            int size = file.GetInt32(offset + 40);
+            int size = file.ReadInt32(offset + 40);
 
             Console.WriteLine("EXTRACTING ENTRY {0}",offset);
 

@@ -13,7 +13,7 @@ namespace CDAudioEx
         {
             Console.Title = "CDAudio.wad Extractor";
 
-            ByteAccess file = new ByteAccess("cdaudio.wad");
+            Binary file = new Binary("cdaudio.wad");
 
             //There should be only 130 entries.
             for (int i = 0; i < 130; i++)
@@ -23,12 +23,12 @@ namespace CDAudioEx
 
         }//Main
 
-        public static void ExtractTR3Audio(ByteAccess file, int index)
+        public static void ExtractTR3Audio(Binary file, int index)
         {
-            string filename = file.GetASCIIString(index * 0x10C, 260);
+            string filename = file.ReadASCIIString(index * 0x10C, 260);
             
-            int size = file.GetInt32((index * 0x10C) + 260);
-            int offset = file.GetInt32((index * 0x10C) + 264);
+            int size = file.ReadInt32((index * 0x10C) + 260);
+            int offset = file.ReadInt32((index * 0x10C) + 264);
 
             if (offset == 0 || size == 0)
                 return;

@@ -26,19 +26,19 @@ namespace STRExtractor
         {
             string fname = System.IO.Path.GetFileNameWithoutExtension(filename);
 
-            ByteAccess file = new ByteAccess(filename);
+            Binary file = new Binary(filename);
             long sectors = file.Length / SECTOR_SIZE;
 
             Console.WriteLine("{0} BYTES, {1} SECTORS", file.Length, sectors);
 
             A1R5G5B5Image screen = new A1R5G5B5Image(640, 480);
             BmpImage image = new BmpImage(640, 480);
-            ByteAccess sector;
+            Binary sector;
 
             for (int i = 0; i < sectors; i++)
             {
                 Console.WriteLine("Extracting SECTOR {0}", i);
-                sector = new ByteAccess(file[SECTOR_SIZE * i, SECTOR_SIZE]);
+                sector = new Binary(file[SECTOR_SIZE * i, SECTOR_SIZE]);
                 screen.Read(sector);
                 image.SetPixels(screen.Pixels);
                 
