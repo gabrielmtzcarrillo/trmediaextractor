@@ -47,7 +47,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\io\GaloreWare.IO.csproj">
+    <ProjectReference Include="..\galoreware.drawing\galoreware.io\GaloreWare.IO.csproj">
       <Project>{A9D1A00B-E730-4519-974E-A32C3F462972}</Project>
       <Name>GaloreWare.IO</Name>
     </ProjectReference>

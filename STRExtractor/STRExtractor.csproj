@@ -47,13 +47,13 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\io\GaloreWare.IO.csproj">
-      <Project>{A9D1A00B-E730-4519-974E-A32C3F462972}</Project>
-      <Name>GaloreWare.IO</Name>
-    </ProjectReference>
     <ProjectReference Include="..\galoreware.drawing\GaloreWare.Drawing.csproj">
       <Project>{86A2D4F7-0C98-4EE6-BD63-46AEDF78BC17}</Project>
       <Name>GaloreWare.Drawing</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\galoreware.drawing\galoreware.io\GaloreWare.IO.csproj">
+      <Project>{A9D1A00B-E730-4519-974E-A32C3F462972}</Project>
+      <Name>GaloreWare.IO</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
